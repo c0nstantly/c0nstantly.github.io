@@ -6,6 +6,6 @@
 Please note that these instances of c0nstantly do **not** support these games (so if you want to play these games you must use the above instances):
 
 - Slope
-- Bloons TD 1/2
+- Bloons TD 1
 - Cookie Clicker
 #### Secondary Instance: https://github.com/c0nstantly/c0nstantly.github.io/deployments/activity_log?environment=Production
