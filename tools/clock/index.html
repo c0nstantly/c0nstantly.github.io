@@ -2,7 +2,7 @@
 <html>
  <head>
  <meta charset = "utf-8">
- <title> Online Click </title>
+ <title id="digital-clock"> Online Clock </title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
@@ -11,5 +11,11 @@
  <body>
  <div id = "digital-clock"> </div>
  <script src = "script.js"> </script>
+ <h2>Date/Time: <span id="datetime"></span></h2>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
  </body>
 </html>
