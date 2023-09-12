@@ -11,11 +11,16 @@
  <body>
  <div id = "digital-clock"> </div>
  <script src = "script.js"> </script>
- <h2 style="font-size=64px;">Date: <span id="datetime"></span></h2>
+<h2 class="big">Date: <span id="datetime"></span></h2>
 
 <script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
+const date = new Date()
+let year = date.getFullYear()
+let day = date.getDate()
+let month = date.getMonth()+1
+let currentDate = `${month}/${day}/${year}`;
+
+document.getElementById("datetime").innerHTML = currentDate.toLocaleString();
 </script>
  </body>
 </html>
