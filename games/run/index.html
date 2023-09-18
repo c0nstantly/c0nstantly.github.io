@@ -1,0 +1,30 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Run</title>
+    <link rel="icon" type="image/x-icon" href="bloonstd.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="bloonstd.jpg" />
+  </head>
+  <body>
+   <button class="w3-button w3-red">
+     <a href="https://c0nstantly.github.io" class="w3-button w3-black">Back</a>
+     </button>
+    <div id="ruffle" width="100%" height="100%"></div>
+    <script src="ruffle.js"></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("ruffle");
+        player.id = "player";
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        player.load("run.swf");
+        autoplay: "auto";
+      });
+    </script>
+  </body>
+</html>
