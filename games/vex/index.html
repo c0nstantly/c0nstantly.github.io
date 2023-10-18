@@ -1,4 +1,4 @@
-<html lang=en_us>
+ <html lang=en_us>
   <head>
    
    <button class="w3-button w3-red">
@@ -7,7 +7,19 @@
        <title> Vex </title>
   </head>
   <body>
-     <iframe src="https://raw.githack.com/3kh0/3kh0-assets/main/vex3/index.html" width="100%" height="100%" style="border:0;">
+     <iframe src="https://raw.githack.com/3kh0/3kh0-assets/main/vex3/index.html" width="100%" height="100%" style="border:0;" id="embededGame">
     </iframe>
+     <center>  <button onclick="goFullscreen('embededGame'); return false" style="padding: 8px;">Fullscreen</button></center> 
+ 
+<script>
+function goFullscreen(id) {
+    var element = document.getElementById(id);
+    if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+      element.webkitRequestFullScreen();
+    }
+}
+</script>
   </body>
 </html>
